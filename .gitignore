@@ -1,0 +1,17 @@
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Project specific
+.antigravity/
+.gemini/
+*.log
+node_modules/
+dist/
+build/

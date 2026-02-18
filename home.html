@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>FredCare Cameroun - Soins de Santé à Domicile</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1E5AA8",
+            "primary-dark": "#134689",
+            "primary-light": "#E8F0FE",
+            "brand-green": "#2FA37C",
+            "brand-orange": "#F2994A",
+            "neutral-dark": "#111827",
+            "neutral-light": "#F9FAFB",
+            "surface": "#F8FAFC",
+            "text-main": "#1E293B",
+            "text-body": "#475569",
+          },
+          fontFamily: {
+            "sans": ["Inter", "sans-serif"],
+            "display": ["Poppins", "sans-serif"],
+          },
+          borderRadius: {
+            "4xl": "2rem",
+          },
+          boxShadow: {
+            'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+            'card': '0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.1)',
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-neutral-dark antialiased selection:bg-primary/10 selection:text-primary">
+  <header
+    class="fixed top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-gray-100/80 transition-all duration-300">
+    <div class="px-6 md:px-12 h-20 flex items-center justify-between max-w-[1440px] mx-auto w-full">
+      <a class="flex items-center gap-2.5 group" href="home.html">
+        <img src="assets/logo.jpg" alt="FredCare Logo"
+          class="h-12 w-auto object-contain transition-transform group-hover:scale-105" />
+      </a>
+      <div class="hidden md:flex items-center gap-10">
+        <nav class="flex items-center gap-8">
+          <a class="text-primary text-[15px] font-semibold transition-colors" href="home.html">Accueil</a>
+          <a class="text-gray-500 hover:text-primary text-[15px] font-medium transition-colors" href="about.html">À
+            Propos</a>
+          <a class="text-gray-500 hover:text-primary text-[15px] font-medium transition-colors" href="how.html">Comment
+            ça marche</a>
+          <a class="text-gray-500 hover:text-primary text-[15px] font-medium transition-colors"
+            href="Services.html">Services</a>
+          <a class="text-gray-500 hover:text-primary text-[15px] font-medium transition-colors"
+            href="contact.html">Contact</a>
+        </nav>
+        <div class="h-6 w-px bg-gray-200"></div>
+        <a href="https://wa.me/4915778144883" target="_blank"
+          class="flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-brand-green/10 hover:bg-brand-green hover:text-white text-brand-green text-[14px] font-semibold transition-all duration-300">
+          <span class="material-symbols-outlined text-[18px]">chat</span>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+      <button class="md:hidden p-2 text-neutral-dark hover:bg-gray-50 rounded-lg transition-colors">
+        <span class="material-symbols-outlined text-[28px]">menu</span>
+      </button>
+    </div>
+  </header>
+  <section class="relative w-full pt-32 pb-24 md:pt-48 md:pb-40 overflow-hidden bg-white">
+    <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+      <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div class="flex flex-col gap-8 order-2 lg:order-1 max-w-2xl">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50/50 border border-blue-100 w-fit">
+            <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            <span class="text-primary font-medium text-[12px] uppercase tracking-wider">Partenaire santé Cameroun</span>
+          </div>
+          <h1
+            class="text-neutral-dark text-5xl md:text-6xl lg:text-[64px] font-semibold leading-[1.1] tracking-tight font-display">
+            La santé de vos proches, <span class="text-primary relative inline-block">entre les meilleures mains.<svg
+                class="absolute w-full h-3 -bottom-1 left-0 text-primary/10 -z-10" preserveAspectRatio="none"
+                viewBox="0 0 100 10">
+                <path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" stroke-width="8"></path>
+              </svg></span>
+          </h1>
+          <p class="text-gray-500 text-lg md:text-xl leading-relaxed font-light max-w-[560px]">
+            Soins à domicile professionnels et bienveillants. Une expertise médicale rigoureuse pour vos parents au
+            Cameroun, avec une transparence totale pour la diaspora.
+          </p>
+          <div class="flex flex-wrap gap-4 pt-4">
+            <button
+              class="flex items-center justify-center rounded-full h-14 px-8 bg-primary hover:bg-blue-700 text-white text-[15px] font-medium transition-all shadow-lg shadow-primary/20 hover:shadow-xl hover:-translate-y-0.5">
+              Demander un devis gratuit
+            </button>
+            <button
+              class="flex items-center justify-center rounded-full h-14 px-8 bg-white border border-gray-200 hover:border-gray-300 hover:bg-gray-50 text-neutral-dark text-[15px] font-medium transition-all gap-2 group">
+              <span
+                class="material-symbols-outlined text-gray-400 group-hover:text-primary transition-colors">call</span>
+              <span>Nous contacter</span>
+            </button>
+          </div>
+          <div class="flex items-center gap-8 pt-8 border-t border-gray-100 mt-2">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-green-50 flex items-center justify-center text-brand-green">
+                <span class="material-symbols-outlined text-[20px]">verified_user</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-sm font-semibold text-neutral-dark">Personnel Vérifié</span>
+                <span class="text-xs text-gray-500">Diplômes certifiés</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-[20px]">public</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-sm font-semibold text-neutral-dark">Lien Diaspora</span>
+                <span class="text-xs text-gray-500">Suivi à distance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2 relative pl-4 lg:pl-10">
+          <div class="relative rounded-3xl overflow-hidden aspect-[1.1/1] bg-gray-100 shadow-2xl shadow-gray-200/50">
+            <img alt="Nurse caring for patient"
+              class="object-cover w-full h-full transform hover:scale-105 transition-transform duration-700"
+              src="assets/hero_raw.jpg" />
+            <!-- Privacy Blur Overlay for Patient Face -->
+            <div
+              class="absolute top-[28%] right-[5%] w-[20%] h-[20%] backdrop-blur-[30px] bg-white/10 rounded-full shadow-xl pointer-events-none"
+              title="Confidentialité préservée"></div>
+            <div
+              class="absolute bottom-8 left-8 bg-white/95 backdrop-blur-sm p-4 pr-6 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-white/50 flex items-center gap-4 animate-fade-in-up">
+              <div
+                class="w-12 h-12 rounded-full bg-brand-green/10 flex items-center justify-center text-brand-green shrink-0">
+                <span class="material-symbols-outlined">favorite</span>
+              </div>
+              <div>
+                <p class="text-2xl font-bold text-neutral-dark font-display">98%</p>
+                <p class="text-xs text-gray-500 font-medium uppercase tracking-wide">Satisfaction Familles</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute -top-6 -right-6 w-24 h-24 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNFNUU3RUIiLz48L3N2Zz4=')] opacity-50 -z-10">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="w-full py-32 bg-neutral-light" id="services">
+    <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-10 mb-20 max-w-5xl mx-auto md:mx-0">
+        <div class="max-w-2xl">
+          <h2 class="text-primary font-semibold text-xs tracking-[0.2em] uppercase mb-4">Notre Expertise</h2>
+          <h3 class="text-neutral-dark text-3xl md:text-4xl lg:text-[42px] font-semibold leading-tight font-display">
+            Une prise en charge globale et personnalisée
+          </h3>
+        </div>
+        <p class="text-gray-500 text-lg leading-relaxed font-light max-w-md pb-1">
+          Nous adaptons nos protocoles de soins à la situation de chaque patient pour garantir confort et sécurité.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div
+          class="group bg-white p-10 rounded-3xl border border-gray-100 shadow-sm hover:shadow-soft transition-all duration-500 hover:-translate-y-1">
+          <div
+            class="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center text-primary mb-8 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+            <span class="material-symbols-outlined !text-[28px]">medical_services</span>
+          </div>
+          <h4 class="text-xl font-bold text-neutral-dark mb-4 font-display">Soins Médicaux</h4>
+          <p class="text-gray-500 leading-relaxed mb-8 font-light">
+            Protocoles infirmiers stricts : injections, pansements, perfusions et suivi post-opératoire par des
+            professionnels agréés.
+          </p>
+          <a class="inline-flex items-center text-sm font-semibold text-primary hover:text-blue-700 transition-colors group/link"
+            href="#">
+            En savoir plus
+            <span
+              class="material-symbols-outlined text-lg ml-1 transition-transform duration-300 group-hover/link:translate-x-1">arrow_forward</span>
+          </a>
+        </div>
+        <div
+          class="group bg-white p-10 rounded-3xl border border-gray-100 shadow-sm hover:shadow-soft transition-all duration-500 hover:-translate-y-1">
+          <div
+            class="w-14 h-14 rounded-2xl bg-green-50 flex items-center justify-center text-brand-green mb-8 group-hover:bg-brand-green group-hover:text-white transition-colors duration-300">
+            <span class="material-symbols-outlined !text-[28px]">elderly</span>
+          </div>
+          <h4 class="text-xl font-bold text-neutral-dark mb-4 font-display">Aide à la Personne</h4>
+          <p class="text-gray-500 leading-relaxed mb-8 font-light">
+            Assistance bienveillante pour les gestes du quotidien : toilette, repas, mobilité et compagnie rassurante.
+          </p>
+          <a class="inline-flex items-center text-sm font-semibold text-brand-green hover:text-green-700 transition-colors group/link"
+            href="#">
+            En savoir plus
+            <span
+              class="material-symbols-outlined text-lg ml-1 transition-transform duration-300 group-hover/link:translate-x-1">arrow_forward</span>
+          </a>
+        </div>
+        <div
+          class="group bg-white p-10 rounded-3xl border border-gray-100 shadow-sm hover:shadow-soft transition-all duration-500 hover:-translate-y-1">
+          <div
+            class="w-14 h-14 rounded-2xl bg-orange-50 flex items-center justify-center text-brand-orange mb-8 group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
+            <span class="material-symbols-outlined !text-[28px]">phonelink_ring</span>
+          </div>
+          <h4 class="text-xl font-bold text-neutral-dark mb-4 font-display">Suivi Connecté</h4>
+          <p class="text-gray-500 leading-relaxed mb-8 font-light">
+            Service dédié à la diaspora : soyez informé en temps réel de l'état de santé de vos proches via nos rapports
+            numériques.
+          </p>
+          <a class="inline-flex items-center text-sm font-semibold text-brand-orange hover:text-orange-700 transition-colors group/link"
+            href="#">
+            En savoir plus
+            <span
+              class="material-symbols-outlined text-lg ml-1 transition-transform duration-300 group-hover/link:translate-x-1">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="w-full py-32 bg-white overflow-hidden" id="why-us">
+    <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+      <div class="grid lg:grid-cols-12 gap-20 items-center">
+        <div class="lg:col-span-5 flex flex-col gap-10 order-2 lg:order-1">
+          <div>
+            <h2 class="text-primary font-semibold text-xs tracking-[0.2em] uppercase mb-4">Valeurs &amp; Engagements
+            </h2>
+            <h3
+              class="text-neutral-dark text-3xl md:text-4xl lg:text-[42px] font-semibold leading-tight mb-6 font-display">
+              Pourquoi choisir FredCare ?
+            </h3>
+            <p class="text-gray-500 text-lg leading-relaxed font-light">
+              Nous apportons la qualité des soins infirmiers à domicile, avec une approche centrée
+              sur l'humain et la prévention.
+            </p>
+          </div>
+          <div class="space-y-10">
+            <div class="flex gap-6">
+              <div class="relative flex flex-col items-center">
+                <div
+                  class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0 z-10 border-4 border-white">
+                  <span class="material-symbols-outlined">home_health</span>
+                </div>
+                <div class="w-px h-full bg-gray-100 absolute top-10 -z-0"></div>
+              </div>
+              <div class="pb-2">
+                <h4 class="text-lg font-semibold text-neutral-dark mb-2">Suivi Infirmier à Domicile</h4>
+                <p class="text-gray-500 text-[15px] leading-relaxed font-light">Bénéficiez d’un suivi professionnel
+                  directement à domicile, sans stress de déplacement ni attente à l’hôpital.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <div class="relative flex flex-col items-center">
+                <div
+                  class="w-12 h-12 rounded-full bg-brand-green/10 flex items-center justify-center text-brand-green shrink-0 z-10 border-4 border-white">
+                  <span class="material-symbols-outlined">family_restroom</span>
+                </div>
+                <div class="w-px h-full bg-gray-100 absolute top-10 -z-0"></div>
+              </div>
+              <div class="pb-2">
+                <h4 class="text-lg font-semibold text-neutral-dark mb-2">Accompagnement Sécurisé</h4>
+                <p class="text-gray-500 text-[15px] leading-relaxed font-light">Un soutien humain et régulier pour vos
+                  parents, femmes enceintes et enfants, pour une tranquillité d'esprit totale.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <div class="relative flex flex-col items-center">
+                <div
+                  class="w-12 h-12 rounded-full bg-brand-orange/10 flex items-center justify-center text-brand-orange shrink-0 z-10 border-4 border-white">
+                  <span class="material-symbols-outlined">health_and_safety</span>
+                </div>
+              </div>
+              <div class="pb-2">
+                <h4 class="text-lg font-semibold text-neutral-dark mb-2">Prévention Active</h4>
+                <p class="text-gray-500 text-[15px] leading-relaxed font-light">Nous surveillons l'état de santé de vos
+                  proches pour prévenir les complications avant qu’il ne soit trop tard.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-7 order-1 lg:order-2">
+          <div class="relative grid grid-cols-2 gap-6">
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[80%] bg-neutral-light rounded-[3rem] -z-10 rotate-3">
+            </div>
+            <div class="space-y-6 pt-12">
+              <div
+                class="w-full aspect-[4/5] bg-primary rounded-3xl overflow-hidden shadow-lg border border-white/10 relative group bg-gradient-to-br from-primary to-blue-900">
+                <img alt="Personnel FredCare Qualifié"
+                  class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110 drop-shadow-[0_20px_50px_rgba(0,0,0,0.3)]"
+                  src="assets/why_1_finished.png" />
+              </div>
+            </div>
+            <div class="space-y-6">
+              <div
+                class="w-full aspect-[4/5] bg-gray-100 rounded-3xl overflow-hidden shadow-lg border border-gray-100 relative group">
+                <img alt="Soins et Accompagnement"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  src="assets/why_2_raw.jpg" />
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="w-full py-32 bg-neutral-light border-y border-gray-100">
+    <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+      <div class="text-center mb-20">
+        <h2 class="text-brand-orange font-semibold text-xs tracking-[0.2em] uppercase mb-4">Témoignages</h2>
+        <h3 class="text-neutral-dark text-3xl md:text-4xl font-semibold font-display">La confiance des familles</h3>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          class="bg-white p-10 rounded-3xl border border-gray-100 flex flex-col gap-6 hover:shadow-soft transition-shadow duration-300">
+          <div class="flex items-center gap-1 text-brand-orange/40">
+            <span class="material-symbols-outlined text-[20px]">star</span>
+            <span class="material-symbols-outlined text-[20px]">star</span>
+            <span class="material-symbols-outlined text-[20px]">star</span>
+            <span class="material-symbols-outlined text-[20px]">star</span>
+            <span class="material-symbols-outlined text-[20px]">star</span>
+          </div>
+          <p class="text-gray-600 italic text-lg font-light leading-relaxed flex-grow">
+            "Vivant en France, j'étais très inquiète pour ma mère diabétique. FredCare a été une bénédiction. Je reçois
+            des nouvelles tous les jours, c'est comme si j'étais là."
+          </p>
+          <div class="flex items-center gap-4 pt-4 border-t border-gray-50">
+            <div
+              class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0 shadow-sm border-2 border-white">
+              <span class="material-symbols-outlined text-[28px]">account_circle</span>
+            </div>
+            <div>
+              <p class="font-bold text-neutral-dark text-[15px]">Mme Ngono</p>
+              <p class="text-xs text-gray-500">Douala, Cameroun</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-white p-10 rounded-3xl border border-gray-100 flex flex-col gap-6 hover:shadow-soft transition-shadow duration-300">
+          <div class="flex items-center gap-1 text-brand-orange/40">
+            <span class="material-symbols-outlined text-[20px]">star</span>
+            <span class="material-symbols-outlined text-[20px]">star</span>
+            <span class="material-symbols-outlined text-[20px]">star</span>
+            <span class="material-symbols-outlined text-[20px]">star</span>
+            <span class="material-symbols-outlined text-[20px]">star</span>
+          </div>
+          <p class="text-gray-600 italic text-lg font-light leading-relaxed flex-grow">
+            "Le professionnalisme de l'infirmier est remarquable. Ponctuel, propre et très respectueux. Mon père est
+            entre de bonnes mains."
+          </p>
+          <div class="flex items-center gap-4 pt-4 border-t border-gray-50">
+            <div
+              class="w-12 h-12 rounded-full bg-brand-green/10 flex items-center justify-center text-brand-green shrink-0">
+              <span class="material-symbols-outlined text-[28px]">account_circle</span>
+            </div>
+            <div>
+              <p class="text-base font-semibold text-neutral-dark">Alain M.</p>
+              <p class="text-xs text-gray-400 font-medium uppercase tracking-wide">Yaoundé, Cameroun</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-white p-10 rounded-3xl border border-gray-100 flex flex-col gap-6 hover:shadow-soft transition-shadow duration-300">
+          <div class="flex items-center gap-1 text-brand-orange/40">
+            <span class="material-symbols-outlined text-[20px]">star</span>
+            <span class="material-symbols-outlined text-[20px]">star</span>
+            <span class="material-symbols-outlined text-[20px]">star</span>
+            <span class="material-symbols-outlined text-[20px]">star</span>
+            <span class="material-symbols-outlined text-[20px]">star</span>
+          </div>
+          <p class="text-gray-600 italic text-lg font-light leading-relaxed flex-grow">
+            "Service client impeccable. Ils sont toujours disponibles sur WhatsApp pour répondre à mes questions, même
+            tard le soir. Très rassurant."
+          </p>
+          <div class="flex items-center gap-4 pt-4 border-t border-gray-50">
+            <div
+              class="w-12 h-12 rounded-full bg-brand-orange/10 flex items-center justify-center text-brand-orange shrink-0">
+              <span class="material-symbols-outlined text-[28px]">account_circle</span>
+            </div>
+            <div>
+              <p class="text-base font-semibold text-neutral-dark">Clarisse N.</p>
+              <p class="text-xs text-gray-400 font-medium uppercase tracking-wide">Montréal, Canada</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-24 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div
+        class="bg-primary rounded-[2.5rem] p-12 md:p-20 text-center text-white relative overflow-hidden shadow-2xl shadow-primary/20">
+        <div
+          class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none">
+        </div>
+        <div
+          class="absolute bottom-0 left-0 w-80 h-80 bg-black/20 rounded-full blur-3xl -ml-20 -mb-20 pointer-events-none">
+        </div>
+        <div class="relative z-10 flex flex-col items-center gap-10">
+          <div>
+            <h2 class="text-3xl md:text-5xl font-semibold tracking-tight mb-6 font-display">Prêt à nous confier la santé
+              de vos proches ?</h2>
+            <p class="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Contactez-nous aujourd'hui
+              pour une évaluation gratuite et sans engagement des besoins à domicile.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-5 w-full sm:w-auto">
+            <button
+              class="flex items-center justify-center rounded-full h-14 px-10 bg-white text-primary text-[16px] font-semibold hover:bg-gray-50 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+              Appeler maintenant
+            </button>
+            <a href="https://wa.me/4915778144883" target="_blank"
+              class="flex items-center justify-center rounded-full h-14 px-10 bg-brand-green text-white text-[16px] font-semibold hover:bg-[#258263] transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 gap-3">
+              <span class="material-symbols-outlined text-[22px]">chat</span>
+              Discuter sur WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-neutral-dark text-white pt-24 pb-12 border-t border-gray-800" id="contact">
+    <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-20">
+        <div class="lg:col-span-4 flex flex-col gap-8">
+          <div class="flex items-center gap-3">
+            <div class="bg-white p-1 rounded-lg">
+              <img src="assets/logo.jpg" alt="FredCare Logo" class="h-10 w-auto object-contain" />
+            </div>
+          </div>
+          <p class="text-gray-400 text-sm leading-7 font-light max-w-sm">
+            Le partenaire de confiance pour les soins à domicile au Cameroun. Nous apportons l'hôpital à la maison avec
+            humanité, expertise et technologie.
+          </p>
+          <div class="flex gap-4">
+            <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors text-gray-400 hover:text-white"
+              href="https://www.facebook.com/share/17rKghvJPc/?mibextid=wwXIfr" target="_blank">
+              <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path clip-rule="evenodd"
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                  fill-rule="evenodd"></path>
+              </svg>
+            </a>
+            <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors text-gray-400 hover:text-white"
+              href="https://www.instagram.com/fredcare_cameroun?igsh=MWZkanlmeGpuMXVicw==" target="_blank">
+              <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path clip-rule="evenodd"
+                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772 4.902 4.902 0 011.772-1.153c.636-.247 1.363-.416 2.427-.465 1.067-.047 1.409-.06 3.809-.06h.63zm1.673 5.378a1.962 1.962 0 11-3.924 0 1.962 1.962 0 013.924 0zM12 8.358a3.641 3.641 0 100 7.282 3.641 3.641 0 000-7.282zm5.787-2.203a1.44 1.44 0 100-2.881 1.44 1.44 0 000 2.881z"
+                  fill-rule="evenodd"></path>
+              </svg>
+            </a>
+            <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors text-gray-400 hover:text-white"
+              href="https://www.tiktok.com/@fredcarecameroun?_r=1&_t=ZS-942EI8XdP1N" target="_blank">
+              <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 448 512">
+                <path
+                  d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="lg:col-span-3 lg:col-start-6 flex flex-col gap-6">
+          <h3 class="text-base font-semibold font-display tracking-wide text-white">Navigation</h3>
+          <ul class="flex flex-col gap-4 text-gray-400 text-sm">
+            <li><a class="hover:text-primary transition-colors flex items-center gap-2" href="home.html"><span
+                  class="w-1.5 h-1.5 rounded-full bg-primary/50"></span>Accueil</a></li>
+            <li><a class="hover:text-primary transition-colors flex items-center gap-2" href="about.html"><span
+                  class="w-1.5 h-1.5 rounded-full bg-transparent hover:bg-primary/50"></span>À Propos</a></li>
+            <li><a class="hover:text-primary transition-colors flex items-center gap-2" href="how.html"><span
+                  class="w-1.5 h-1.5 rounded-full bg-transparent hover:bg-primary/50"></span>Comment ça marche</a></li>
+            <li><a class="hover:text-primary transition-colors flex items-center gap-2" href="Services.html"><span
+                  class="w-1.5 h-1.5 rounded-full bg-transparent hover:bg-primary/50"></span>Services</a></li>
+            <li><a class="hover:text-primary transition-colors flex items-center gap-2" href="contact.html"><span
+                  class="w-1.5 h-1.5 rounded-full bg-transparent hover:bg-primary/50"></span>Contact</a></li>
+          </ul>
+        </div>
+        <div class="lg:col-span-4 flex flex-col gap-6">
+          <h3 class="text-base font-semibold font-display tracking-wide text-white">Contactez-nous</h3>
+          <ul class="flex flex-col gap-5 text-gray-400">
+            <li class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-brand-orange text-[18px]">location_on</span>
+              </div>
+              <span class="text-sm leading-relaxed pt-1">Edea Cameroun,<br />à côté hotel de ville</span>
+            </li>
+            <li class="flex items-center gap-4">
+              <div class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-brand-orange text-[18px]">call</span>
+              </div>
+              <span class="text-sm hover:text-white transition-colors cursor-pointer">+237 655008497</span>
+            </li>
+            <li class="flex items-center gap-4">
+              <div class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-brand-orange text-[18px]">mail</span>
+              </div>
+              <span
+                class="text-sm hover:text-white transition-colors cursor-pointer">fredcarecameroun2025@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800/50 pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
+        <p class="text-xs text-gray-500 font-light">© 2024 FredCare Cameroun. Tous droits réservés.</p>
+        <div class="flex gap-8">
+          <a class="text-xs text-gray-500 hover:text-white transition-colors" href="#">Mentions Légales</a>
+          <a class="text-xs text-gray-500 hover:text-white transition-colors" href="#">Confidentialité</a>
+          <a class="text-xs text-gray-500 hover:text-white transition-colors" href="#">Plan du site</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

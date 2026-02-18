@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Comment ça Marche - FredCare Cameroun</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1E5AA8",
+                        "primary-dark": "#134689",
+                        "primary-light": "#E8F0FE",
+                        "brand-green": "#2FA37C",
+                        "brand-orange": "#F2994A",
+                        "neutral-dark": "#111827",
+                        "neutral-light": "#F9FAFB",
+                        "surface": "#F8FAFC",
+                        "text-main": "#1E293B",
+                        "text-body": "#475569",
+                    },
+                    fontFamily: {
+                        "sans": ["Inter", "sans-serif"],
+                        "display": ["Poppins", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "4xl": "2rem",
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'card': '0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.1)',
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-neutral-dark antialiased selection:bg-primary/10 selection:text-primary">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <header
+            class="fixed top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-gray-100/80 transition-all duration-300">
+            <div class="px-6 md:px-12 h-20 flex items-center justify-between max-w-[1440px] mx-auto w-full">
+                <a class="flex items-center gap-2.5 group" href="home.html">
+                    <img src="assets/logo.jpg" alt="FredCare Logo"
+                        class="h-12 w-auto object-contain transition-transform group-hover:scale-105" />
+                </a>
+                <div class="hidden md:flex items-center gap-10">
+                    <nav class="flex items-center gap-8">
+                        <a class="text-gray-500 hover:text-primary text-[15px] font-medium transition-colors"
+                            href="home.html">Accueil</a>
+                        <a class="text-gray-500 hover:text-primary text-[15px] font-medium transition-colors"
+                            href="about.html">À
+                            Propos</a>
+                        <a class="text-primary text-[15px] font-semibold transition-colors" href="how.html">Comment
+                            ça marche</a>
+                        <a class="text-gray-500 hover:text-primary text-[15px] font-medium transition-colors"
+                            href="Services.html">Services</a>
+                        <a class="text-gray-500 hover:text-primary text-[15px] font-medium transition-colors"
+                            href="contact.html">Contact</a>
+                    </nav>
+                    <div class="h-6 w-px bg-gray-200"></div>
+                    <a href="https://wa.me/4915778144883" target="_blank"
+                        class="flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-brand-green/10 hover:bg-brand-green hover:text-white text-brand-green text-[14px] font-semibold transition-all duration-300">
+                        <span class="material-symbols-outlined text-[18px]">chat</span>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+                <button class="md:hidden p-2 text-neutral-dark hover:bg-gray-50 rounded-lg transition-colors">
+                    <span class="material-symbols-outlined text-[28px]">menu</span>
+                </button>
+            </div>
+        </header>
+        <section class="relative w-full pt-32 pb-24 md:pt-48 md:pb-40 overflow-hidden bg-white">
+            <div class="max-w-[1440px] mx-auto px-6 md:px-12 relative z-10">
+                <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+                    <div class="flex flex-col gap-8 order-2 lg:order-1 max-w-2xl">
+                        <span
+                            class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full bg-blue-50/50 border border-blue-100 text-primary text-xs font-bold uppercase tracking-widest w-fit">
+                            <span class="relative flex h-2 w-2">
+                                <span
+                                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                            </span>
+                            Processus Simplifié
+                        </span>
+                        <h1
+                            class="text-neutral-dark text-5xl md:text-6xl lg:text-[64px] font-semibold leading-[1.1] tracking-tight font-display">
+                            Votre sérénité <br /><span class="text-primary relative inline-block">en 4 étapes.<svg
+                                    class="absolute w-full h-3 -bottom-1 left-0 text-primary/10 -z-10"
+                                    preserveAspectRatio="none" viewBox="0 0 100 10">
+                                    <path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" stroke-width="8">
+                                    </path>
+                                </svg></span>
+                        </h1>
+                        <p class="text-gray-500 text-lg md:text-xl leading-relaxed font-light max-w-[560px]">
+                            Des soins d'excellence pour vos proches au Cameroun. Une gestion transparente, simple et
+                            humaine, conçue pour effacer la distance.
+                        </p>
+                        <div class="flex flex-wrap gap-4 pt-4">
+                            <button
+                                class="flex items-center justify-center rounded-full h-14 px-8 bg-primary hover:bg-blue-700 text-white text-[15px] font-medium transition-all shadow-lg shadow-primary/20 hover:shadow-xl hover:-translate-y-0.5">
+                                Commencer maintenant
+                            </button>
+                            <button
+                                class="flex items-center justify-center rounded-full h-14 px-8 bg-white border border-gray-200 hover:border-gray-300 hover:bg-gray-50 text-neutral-dark text-[15px] font-medium transition-all gap-2 group">
+                                <span
+                                    class="material-symbols-outlined text-gray-400 group-hover:text-primary transition-colors">play_circle</span>
+                                <span>Voir la vidéo</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative order-1 lg:order-2">
+                        <div
+                            class="relative rounded-3xl overflow-hidden shadow-2xl shadow-blue-900/10 aspect-[4/3] lg:aspect-auto lg:h-[600px]">
+                            <div class="w-full h-full bg-cover bg-center"
+                                style='background-image: url("https://images.unsplash.com/photo-1542884748-2b87b36c6b90?auto=format&fit=crop&q=80&w=1200");'>
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 bg-surface">
+            <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+                <div class="max-w-3xl mb-20">
+                    <h2 class="text-neutral-dark text-3xl md:text-4xl font-semibold mb-6 tracking-tight">
+                        Comment ça fonctionne ?</h2>
+                    <p class="text-gray-500 text-lg font-light">
+                        Un parcours fluide et rassurant, pensé pour vous offrir une visibilité totale sur la prise en
+                        charge de vos proches.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+                    <div
+                        class="hidden lg:block absolute top-12 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-700 to-transparent z-0">
+                    </div>
+                    <div
+                        class="relative z-10 group bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-soft transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex justify-between items-start mb-8">
+                            <div
+                                class="size-14 rounded-xl bg-blue-50 text-primary flex items-center justify-center border border-blue-100 transition-colors group-hover:bg-primary group-hover:text-white group-hover:border-primary">
+                                <span class="material-symbols-outlined text-3xl">perm_phone_msg</span>
+                            </div>
+                            <span
+                                class="text-4xl font-bold text-gray-100 select-none group-hover:text-gray-200 transition-colors">01</span>
+                        </div>
+                        <h3 class="text-slate-900 dark:text-white text-xl font-bold mb-3">Prise de Contact</h3>
+                        <p class="text-slate-500 dark:text-gray-400 text-[15px] leading-relaxed mb-4">
+                            Partagez vos besoins via notre formulaire ou WhatsApp. Un conseiller analyse votre situation
+                            avec bienveillance.
+                        </p>
+                        <a class="inline-flex items-center text-primary font-medium text-xs uppercase tracking-wide hover:underline decoration-primary/30 underline-offset-4"
+                            href="#">
+                            Discuter maintenant
+                        </a>
+                    </div>
+                    <div
+                        class="relative z-10 group bg-white dark:bg-[#1a2330] p-8 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-hover transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex justify-between items-start mb-8">
+                            <div
+                                class="size-14 rounded-xl bg-blue-50 dark:bg-blue-900/20 text-primary flex items-center justify-center border border-blue-100 dark:border-blue-800 transition-colors group-hover:bg-primary group-hover:text-white group-hover:border-primary">
+                                <span class="material-symbols-outlined text-3xl">clinical_notes</span>
+                            </div>
+                            <span
+                                class="text-4xl font-bold text-gray-100 dark:text-gray-800 select-none group-hover:text-gray-200 dark:group-hover:text-gray-700 transition-colors">02</span>
+                        </div>
+                        <h3 class="text-slate-900 dark:text-white text-xl font-bold mb-3">Évaluation</h3>
+                        <p class="text-slate-500 dark:text-gray-400 text-[15px] leading-relaxed mb-4">
+                            Un infirmier coordinateur se déplace pour réaliser un diagnostic complet et établir un
+                            protocole précis.
+                        </p>
+                        <span
+                            class="inline-block px-2 py-1 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-300 text-[10px] font-bold uppercase tracking-wider rounded">Gratuit</span>
+                    </div>
+                    <div
+                        class="relative z-10 group bg-white dark:bg-[#1a2330] p-8 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-hover transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex justify-between items-start mb-8">
+                            <div
+                                class="size-14 rounded-xl bg-blue-50 dark:bg-blue-900/20 text-primary flex items-center justify-center border border-blue-100 dark:border-blue-800 transition-colors group-hover:bg-primary group-hover:text-white group-hover:border-primary">
+                                <span class="material-symbols-outlined text-3xl">description</span>
+                            </div>
+                            <span
+                                class="text-4xl font-bold text-gray-100 select-none group-hover:text-gray-200 transition-colors">03</span>
+                        </div>
+                        <h3 class="text-slate-900 dark:text-white text-xl font-bold mb-3">Proposition</h3>
+                        <p class="text-slate-500 dark:text-gray-400 text-[15px] leading-relaxed">
+                            Recevez un plan de soins détaillé et un devis clair. Après validation, nous sélectionnons
+                            l'équipe soignante idéale.
+                        </p>
+                    </div>
+                    <div
+                        class="relative z-10 group bg-primary p-8 rounded-2xl border border-primary shadow-xl shadow-blue-200/50 transition-all duration-300 hover:-translate-y-1 lg:scale-105">
+                        <div class="flex justify-between items-start mb-8">
+                            <div
+                                class="size-14 rounded-xl bg-white/20 text-white flex items-center justify-center backdrop-blur-sm">
+                                <span class="material-symbols-outlined text-3xl">visibility</span>
+                            </div>
+                            <span class="text-4xl font-bold text-white/20 select-none">04</span>
+                        </div>
+                        <h3 class="text-white text-xl font-bold mb-3">Suivi en Temps Réel</h3>
+                        <p class="text-blue-100 text-[15px] leading-relaxed mb-4">
+                            Accédez aux rapports digitaux après chaque visite. Vous êtes informé comme si vous étiez sur
+                            place.
+                        </p>
+                        <div class="flex gap-2">
+                            <span
+                                class="px-2 py-1 bg-white/10 text-white text-[10px] uppercase font-bold tracking-wider rounded">Rapports</span>
+                            <span
+                                class="px-2 py-1 bg-white/10 text-white text-[10px] uppercase font-bold tracking-wider rounded">Constantes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 bg-white">
+            <div class="max-w-[1200px] mx-auto px-6">
+                <div
+                    class="flex flex-col md:flex-row justify-between items-end gap-6 mb-16 border-b border-gray-100 pb-8">
+                    <div>
+                        <h2 class="text-neutral-dark text-3xl font-semibold mb-2">Standards Internationaux
+                        </h2>
+                        <p class="text-gray-500 text-lg font-light">Une qualité de service sans
+                            compromis.</p>
+                    </div>
+                    <a class="text-primary font-medium hover:text-blue-800 text-sm flex items-center mb-1" href="#">
+                        Voir nos accréditations <span
+                            class="material-symbols-outlined ml-1 text-base">arrow_forward</span>
+                    </a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                    <div class="flex flex-col gap-6 group">
+                        <div class="h-60 w-full rounded-2xl overflow-hidden bg-gray-100 relative">
+                            <div
+                                class="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors duration-300 z-10">
+                            </div>
+                            <div class="w-full h-full transition-transform duration-700 group-hover:scale-105 bg-cover bg-center"
+                                data-alt="Main de soignant africain tenant celle d'un patient"
+                                style='background-image: url("https://images.unsplash.com/photo-1576765608598-dd7286bcc580?auto=format&fit=crop&q=80&w=800");'>
+                            </div>
+                        </div>
+                        <div class="px-2">
+                            <h4 class="text-neutral-dark text-xl font-semibold mb-3 flex items-center gap-3">
+                                <span
+                                    class="flex items-center justify-center size-8 rounded-full bg-blue-50 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined text-lg">verified_user</span>
+                                </span>
+                                Personnel Qualifié
+                            </h4>
+                            <p class="text-gray-500 text-[15px] leading-relaxed font-light pl-11">
+                                Infirmiers diplômés d'État, rigoureusement sélectionnés et formés aux protocoles de
+                                soins à domicile.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-6 group">
+                        <div class="h-60 w-full rounded-2xl overflow-hidden bg-gray-100 relative">
+                            <div
+                                class="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors duration-300 z-10">
+                            </div>
+                            <div class="w-full h-full transition-transform duration-700 group-hover:scale-105 bg-cover bg-center"
+                                data-alt="Hôpital moderne en Afrique"
+                                style='background-image: url("https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=800");'>
+                            </div>
+                        </div>
+                        <div class="px-2">
+                            <h4 class="text-neutral-dark text-xl font-semibold mb-3 flex items-center gap-3">
+                                <span
+                                    class="flex items-center justify-center size-8 rounded-full bg-blue-50 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined text-lg">lock</span>
+                                </span>
+                                Paiement Sécurisé
+                            </h4>
+                            <p class="text-gray-500 text-[15px] leading-relaxed font-light pl-11">
+                                Transactions traçables et sécurisées. Une facturation transparente pour une tranquillité
+                                d'esprit totale.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-6 group">
+                        <div class="h-60 w-full rounded-2xl overflow-hidden bg-gray-100 relative">
+                            <div
+                                class="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors duration-300 z-10">
+                            </div>
+                            <div class="w-full h-full transition-transform duration-700 group-hover:scale-105 bg-cover bg-center"
+                                data-alt="Médecin africain utilisant une tablette"
+                                style='background-image: url("https://images.unsplash.com/photo-1542884748-2b87b36c6b90?auto=format&fit=crop&q=80&w=800");'>
+                            </div>
+                        </div>
+                        <div class="px-2">
+                            <h4 class="text-neutral-dark text-xl font-semibold mb-3 flex items-center gap-3">
+                                <span
+                                    class="flex items-center justify-center size-8 rounded-full bg-blue-50 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined text-lg">smartphone</span>
+                                </span>
+                                Proximité Digitale
+                            </h4>
+                            <p class="text-gray-500 text-[15px] leading-relaxed font-light pl-11">
+                                Suivez l'évolution de la santé de votre proche et validez les passages via notre
+                                plateforme intuitive.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 bg-surface border-y border-gray-100">
+            <div class="max-w-[1000px] mx-auto px-6">
+                <h2 class="text-center text-neutral-dark text-3xl font-semibold mb-20 tracking-tight">
+                    Témoignages</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col gap-6 relative">
+                        <div class="flex gap-0.5 text-yellow-400 mb-2">
+                            <span class="material-symbols-outlined text-lg filled">star</span>
+                            <span class="material-symbols-outlined text-lg filled">star</span>
+                            <span class="material-symbols-outlined text-lg filled">star</span>
+                            <span class="material-symbols-outlined text-lg filled">star</span>
+                            <span class="material-symbols-outlined text-lg filled">star</span>
+                        </div>
+                        <p class="text-gray-700 text-lg italic leading-relaxed font-light">
+                            "Depuis Paris, je gérais difficilement le diabète de mon père à Douala. Avec FredCare, je
+                            reçois ses taux de glycémie chaque matin. C'est un soulagement immense."
+                        </p>
+                        <div class="flex items-center gap-4 mt-auto pt-6 border-t border-gray-50 dark:border-gray-700">
+                            <div
+                                class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                                <span class="material-symbols-outlined text-[24px]">account_circle</span>
+                            </div>
+                            <div>
+                                <p class="text-neutral-dark font-semibold text-sm">Alain K.</p>
+                                <p class="text-gray-400 text-xs">Paris, France</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col gap-6 relative">
+                        <div class="flex gap-0.5 text-yellow-400 mb-2">
+                            <span class="material-symbols-outlined text-lg filled">star</span>
+                            <span class="material-symbols-outlined text-lg filled">star</span>
+                            <span class="material-symbols-outlined text-lg filled">star</span>
+                            <span class="material-symbols-outlined text-lg filled">star</span>
+                            <span class="material-symbols-outlined text-lg filled">star</span>
+                        </div>
+                        <p class="text-slate-700 dark:text-gray-200 text-lg italic leading-relaxed font-light">
+                            "L'équipe est très professionnelle. Ma mère se sent écoutée et respectée. Le système de
+                            paiement en ligne est aussi très pratique pour nous au Canada."
+                        </p>
+                        <div class="flex items-center gap-4 mt-auto pt-6 border-t border-gray-50 dark:border-gray-700">
+                            <div
+                                class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                                <span class="material-symbols-outlined text-[24px]">account_circle</span>
+                            </div>
+                            <div>
+                                <p class="text-neutral-dark font-semibold text-sm">Sarah M.</p>
+                                <p class="text-gray-400 text-xs">Montréal, Canada</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 bg-white dark:bg-background-dark">
+            <div class="max-w-[700px] mx-auto px-6">
+                <h2 class="text-center text-slate-900 dark:text-white text-3xl font-semibold mb-12">Questions Fréquentes
+                </h2>
+                <div class="flex flex-col gap-4">
+                    <details
+                        class="group bg-surface-light dark:bg-[#1a2330] rounded-xl border border-gray-100 dark:border-gray-800 overflow-hidden">
+                        <summary
+                            class="flex justify-between items-center cursor-pointer p-6 font-medium text-slate-800 dark:text-white text-lg select-none hover:bg-gray-100 dark:hover:bg-[#202b3a] transition-colors">
+                            Comment payez-vous les prestations ?
+                            <span
+                                class="material-symbols-outlined text-gray-400 group-open:rotate-180 transition-transform duration-300">expand_more</span>
+                        </summary>
+                        <div
+                            class="px-6 pb-6 pt-0 text-slate-500 dark:text-gray-400 text-[15px] leading-relaxed font-light">
+                            Nous acceptons les paiements sécurisés par carte bancaire (Visa, Mastercard) via notre
+                            plateforme, ainsi que les virements internationaux et Mobile Money pour plus de flexibilité.
+                        </div>
+                    </details>
+                    <details
+                        class="group bg-surface-light dark:bg-[#1a2330] rounded-xl border border-gray-100 dark:border-gray-800 overflow-hidden">
+                        <summary
+                            class="flex justify-between items-center cursor-pointer p-6 font-medium text-slate-800 dark:text-white text-lg select-none hover:bg-gray-100 dark:hover:bg-[#202b3a] transition-colors">
+                            Dans quelles villes intervenez-vous ?
+                            <span
+                                class="material-symbols-outlined text-gray-400 group-open:rotate-180 transition-transform duration-300">expand_more</span>
+                        </summary>
+                        <div
+                            class="px-6 pb-6 pt-0 text-slate-500 dark:text-gray-400 text-[15px] leading-relaxed font-light">
+                            Actuellement, nous couvrons principalement les villes de Douala et Yaoundé. Nous prévoyons
+                            d'étendre nos services à d'autres régions prochainement.
+                        </div>
+                    </details>
+                    <details
+                        class="group bg-surface-light dark:bg-[#1a2330] rounded-xl border border-gray-100 dark:border-gray-800 overflow-hidden">
+                        <summary
+                            class="flex justify-between items-center cursor-pointer p-6 font-medium text-slate-800 dark:text-white text-lg select-none hover:bg-gray-100 dark:hover:bg-[#202b3a] transition-colors">
+                            Puis-je changer d'infirmier si cela ne convient pas ?
+                            <span
+                                class="material-symbols-outlined text-gray-400 group-open:rotate-180 transition-transform duration-300">expand_more</span>
+                        </summary>
+                        <div
+                            class="px-6 pb-6 pt-0 text-slate-500 dark:text-gray-400 text-[15px] leading-relaxed font-light">
+                            Absolument. Votre satisfaction et le confort de votre proche sont prioritaires. En cas
+                            d'incompatibilité, nous proposons un remplacement rapide sans frais supplémentaires.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 bg-primary relative overflow-hidden">
+            <div
+                class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/medical-icons.png')]">
+            </div>
+            <div class="relative max-w-[960px] mx-auto px-6 text-center flex flex-col items-center gap-10">
+                <h2 class="text-white text-4xl md:text-5xl font-bold tracking-tight leading-tight">Prendre soin
+                    d'eux,<br />c'est commencer aujourd'hui.</h2>
+                <p class="text-blue-100 text-xl font-light max-w-2xl leading-relaxed">
+                    Ne laissez plus la distance être un obstacle. L'évaluation initiale est gratuite et sans engagement.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-5 w-full sm:w-auto mt-2">
+                    <button
+                        class="bg-white text-primary hover:bg-blue-50 font-semibold py-4 px-10 rounded-full shadow-lg shadow-blue-900/10 transition-transform hover:scale-105">
+                        Demander un devis gratuit
+                    </button>
+                    <button
+                        class="bg-transparent border border-white/40 text-white hover:bg-white/10 hover:border-white font-semibold py-4 px-10 rounded-full transition-all flex items-center justify-center gap-2">
+                        <span class="material-symbols-outlined">call</span> Contacter un conseiller
+                    </button>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-neutral-dark text-white pt-24 pb-12 border-t border-gray-800" id="contact">
+            <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-20">
+                    <div class="lg:col-span-4 flex flex-col gap-8">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-white p-1 rounded-lg">
+                                <img src="assets/logo.jpg" alt="FredCare Logo" class="h-10 w-auto object-contain" />
+                            </div>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-7 font-light max-w-sm">
+                            Le partenaire de confiance pour les soins à domicile au Cameroun. Nous apportons l'hôpital à
+                            la maison avec
+                            humanité, expertise et technologie.
+                        </p>
+                        <div class="flex gap-4">
+                            <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors text-gray-400 hover:text-white"
+                                href="https://www.facebook.com/share/17rKghvJPc/?mibextid=wwXIfr" target="_blank">
+                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path clip-rule="evenodd"
+                                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors text-gray-400 hover:text-white"
+                                href="https://www.instagram.com/fredcare_cameroun?igsh=MWZkanlmeGpuMXVicw=="
+                                target="_blank">
+                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path clip-rule="evenodd"
+                                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772 4.902 4.902 0 011.772-1.153c.636-.247 1.363-.416 2.427-.465 1.067-.047 1.409-.06 3.809-.06h.63zm1.673 5.378a1.962 1.962 0 11-3.924 0 1.962 1.962 0 013.924 0zM12 8.358a3.641 3.641 0 100 7.282 3.641 3.641 0 000-7.282zm5.787-2.203a1.44 1.44 0 100-2.881 1.44 1.44 0 000 2.881z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors text-gray-400 hover:text-white"
+                                href="https://www.tiktok.com/@fredcarecameroun?_r=1&_t=ZS-942EI8XdP1N" target="_blank">
+                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 448 512">
+                                    <path
+                                        d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-3 lg:col-start-6 flex flex-col gap-6">
+                        <h3 class="text-base font-semibold font-display tracking-wide text-white">Navigation</h3>
+                        <ul class="flex flex-col gap-4 text-gray-400 text-sm">
+                            <li><a class="hover:text-primary transition-colors flex items-center gap-2"
+                                    href="home.html"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-transparent hover:bg-primary/50"></span>Accueil</a>
+                            </li>
+                            <li><a class="hover:text-primary transition-colors flex items-center gap-2"
+                                    href="about.html"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-transparent hover:bg-primary/50"></span>À
+                                    Propos</a></li>
+                            <li><a class="hover:text-primary transition-colors flex items-center gap-2"
+                                    href="how.html"><span class="w-1.5 h-1.5 rounded-full bg-primary/50"></span>Comment
+                                    ça marche</a></li>
+                            <li><a class="hover:text-primary transition-colors flex items-center gap-2"
+                                    href="Services.html"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-transparent hover:bg-primary/50"></span>Services</a>
+                            </li>
+                            <li><a class="hover:text-primary transition-colors flex items-center gap-2"
+                                    href="contact.html"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-transparent hover:bg-primary/50"></span>Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lg:col-span-4 flex flex-col gap-6">
+                        <h3 class="text-base font-semibold font-display tracking-wide text-white">Contactez-nous</h3>
+                        <ul class="flex flex-col gap-5 text-gray-400">
+                            <li class="flex items-start gap-4">
+                                <div class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center shrink-0">
+                                    <span
+                                        class="material-symbols-outlined text-brand-orange text-[18px]">location_on</span>
+                                </div>
+                                <span class="text-sm leading-relaxed pt-1">Edea Cameroun,<br />à côté hotel de
+                                    ville</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <div class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined text-brand-orange text-[18px]">call</span>
+                                </div>
+                                <span class="text-sm hover:text-white transition-colors cursor-pointer">+237
+                                    655008497</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <div class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined text-brand-orange text-[18px]">mail</span>
+                                </div>
+                                <span
+                                    class="text-sm hover:text-white transition-colors cursor-pointer">fredcarecameroun2025@gmail.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="border-t border-gray-800/50 pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                    <p class="text-xs text-gray-500 font-light">© 2024 FredCare Cameroun. Tous droits réservés.</p>
+                    <div class="flex gap-8">
+                        <a class="text-xs text-gray-500 hover:text-white transition-colors" href="#">Mentions
+                            Légales</a>
+                        <a class="text-xs text-gray-500 hover:text-white transition-colors" href="#">Confidentialité</a>
+                        <a class="text-xs text-gray-500 hover:text-white transition-colors" href="#">Plan du site</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a class="fixed bottom-8 right-8 bg-[#25D366] hover:bg-[#128C7E] text-white size-14 rounded-full shadow-xl transition-all hover:scale-105 hover:-translate-y-1 z-50 flex items-center justify-center"
+            href="https://wa.me/4915778144883" target="_blank">
+            <span class="material-symbols-outlined text-2xl">chat</span>
+        </a>
+    </div>
+
+</body>
+
+</html>
