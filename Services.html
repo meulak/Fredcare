@@ -235,47 +235,62 @@
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+                <!-- Formule Essentiel -->
                 <div
-                    class="flex flex-col bg-white rounded-2xl p-8 border border-gray-100 hover:border-gray-200 transition-all duration-300 relative group h-full hover:shadow-lg hover:shadow-gray-200/50">
+                    class="flex flex-col bg-white rounded-3xl p-8 border border-gray-100 hover:border-gray-200 transition-all duration-300 relative group h-full hover:shadow-lg hover:shadow-gray-200/50">
                     <div class="mb-6">
-                        <h3 class="text-neutral-dark text-lg font-bold mb-2">Ponctuelle</h3>
-                        <p class="text-gray-500 text-xs leading-relaxed">Interventions ciblées sur demande.</p>
+                        <div
+                            class="size-12 rounded-2xl bg-slate-50 text-slate-400 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                            <span class="material-symbols-outlined">medical_information</span>
+                        </div>
+                        <h3 class="text-neutral-dark text-xl font-bold mb-2">Formule Essentiel</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">Pour un besoin ponctuel ou une évaluation
+                            initiale.</p>
                     </div>
                     <div class="mb-8 pb-6 border-b border-gray-100">
                         <p class="flex items-baseline gap-1 text-neutral-dark">
                             <span class="text-3xl font-bold tracking-tight">Sur devis</span>
-                            <span class="text-xs font-medium text-gray-400">/ visite</span>
+                            <span class="text-xs font-medium text-gray-400">/ intervention</span>
                         </p>
                     </div>
-                    <ul class="flex flex-col gap-4 mb-8 flex-grow">
+                    <ul class="flex flex-col gap-4 mb-10 flex-grow">
                         <li class="flex gap-3 items-start">
-                            <span class="material-symbols-outlined text-primary text-lg mt-0.5">check</span>
-                            <span class="text-gray-600 text-sm">Visite infirmière unique</span>
+                            <span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
+                            <span class="text-gray-600 text-sm">Visite d'évaluation à domicile</span>
                         </li>
                         <li class="flex gap-3 items-start">
-                            <span class="material-symbols-outlined text-primary text-lg mt-0.5">check</span>
-                            <span class="text-gray-600 text-sm">Administration médicaments</span>
+                            <span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
+                            <span class="text-gray-600 text-sm">Soins infirmiers sur prescription</span>
                         </li>
                         <li class="flex gap-3 items-start">
-                            <span class="material-symbols-outlined text-primary text-lg mt-0.5">check</span>
-                            <span class="text-gray-600 text-sm">Soins de plaies simples</span>
+                            <span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
+                            <span class="text-gray-600 text-sm">Conseils en hygiène et nutrition</span>
+                        </li>
+                        <li class="flex gap-3 items-start text-gray-400">
+                            <span class="material-symbols-outlined text-lg mt-0.5">remove_circle_outline</span>
+                            <span class="text-sm">Rapport numérique détaillé</span>
                         </li>
                     </ul>
-                    <button
-                        class="w-full h-11 rounded-lg border border-gray-200 bg-white text-gray-700 text-sm font-semibold hover:bg-gray-50 hover:border-gray-300 transition-colors mt-auto">
-                        Demander un devis
-                    </button>
+                    <a href="https://wa.me/4915778144883" target="_blank"
+                        class="w-full h-12 flex items-center justify-center rounded-xl border border-primary text-primary text-sm font-bold hover:bg-primary hover:text-white transition-all duration-300">
+                        Choisir l'Essentiel
+                    </a>
                 </div>
+
+                <!-- Formule Sérénité -->
                 <div
-                    class="flex flex-col bg-white rounded-2xl p-8 border border-primary/20 shadow-xl shadow-primary/5 relative z-10 h-full ring-1 ring-primary/10">
-                    <div class="absolute top-0 right-0 p-6">
+                    class="flex flex-col bg-white rounded-3xl p-8 border-2 border-primary shadow-xl shadow-primary/10 relative z-10 h-full scale-105 md:scale-110">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2">
                         <span
-                            class="bg-primary/5 text-primary text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Recommandé</span>
+                            class="bg-primary text-white text-[10px] font-bold px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Recommandé</span>
                     </div>
-                    <div class="mb-6 mt-1">
-                        <h3 class="text-primary text-lg font-bold mb-2">Suivi Mensuel</h3>
-                        <p class="text-slate-500 text-xs leading-relaxed">Monitoring continu pour pathologies
-                            chroniques.</p>
+                    <div class="mb-6">
+                        <div class="size-12 rounded-2xl bg-primary text-white flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined">verified_user</span>
+                        </div>
+                        <h3 class="text-primary text-xl font-bold mb-2">Formule Sérénité</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">Suivi régulier pour une tranquillité d'esprit
+                            totale.</p>
                     </div>
                     <div class="mb-8 pb-6 border-b border-dashed border-gray-200">
                         <p class="flex items-baseline gap-1 text-neutral-dark">
@@ -283,35 +298,42 @@
                             <span class="text-xs font-medium text-gray-400">/ mois</span>
                         </p>
                     </div>
-                    <ul class="flex flex-col gap-4 mb-8 flex-grow">
+                    <ul class="flex flex-col gap-4 mb-10 flex-grow">
                         <li class="flex gap-3 items-start">
                             <span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
-                            <span class="text-gray-700 text-sm font-medium">Visites régulières (2-3x/sem)</span>
+                            <span class="text-gray-700 text-sm font-medium">3 passages infirmiers / semaine</span>
                         </li>
                         <li class="flex gap-3 items-start">
                             <span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
-                            <span class="text-gray-700 text-sm font-medium">Constantes (Tension, Glycémie)</span>
+                            <span class="text-gray-700 text-sm font-medium">Contrôle des constantes vitales</span>
                         </li>
                         <li class="flex gap-3 items-start">
                             <span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
-                            <span class="text-gray-700 text-sm font-medium">Renouvellement ordonnances</span>
+                            <span class="text-gray-700 text-sm font-medium">Gestion du pilulier hebdomadaire</span>
                         </li>
-                        <li
-                            class="flex gap-3 items-center bg-blue-50/50 px-3 py-2 rounded-lg -ml-3 w-[calc(100%+1.5rem)] mt-2">
-                            <span class="material-symbols-outlined text-primary text-lg">photo_camera</span>
-                            <span class="text-primary text-sm font-semibold">Rapport Hebdo avec Photos</span>
+                        <li class="flex gap-3 items-start bg-primary/5 p-3 rounded-2xl -mx-1">
+                            <span
+                                class="material-symbols-outlined text-primary text-lg mt-0.5">notifications_active</span>
+                            <span class="text-primary text-sm font-bold">Rapports WhatsApp quotidiens</span>
                         </li>
                     </ul>
-                    <button
-                        class="w-full h-11 rounded-lg bg-primary text-white text-sm font-semibold hover:bg-primary-dark transition-all shadow-lg shadow-primary/20 mt-auto">
-                        Choisir cette formule
-                    </button>
+                    <a href="https://wa.me/4915778144883" target="_blank"
+                        class="w-full h-12 flex items-center justify-center rounded-xl bg-primary text-white text-sm font-bold hover:bg-primary-dark transition-all shadow-lg shadow-primary/20">
+                        Opter pour la Sérénité
+                    </a>
                 </div>
+
+                <!-- Formule Prestige -->
                 <div
-                    class="flex flex-col bg-white rounded-2xl p-8 border border-gray-100 hover:border-gray-200 transition-all duration-300 relative group h-full hover:shadow-lg hover:shadow-gray-200/50">
+                    class="flex flex-col bg-white rounded-3xl p-8 border border-gray-100 hover:border-gray-200 transition-all duration-300 relative group h-full hover:shadow-lg hover:shadow-gray-200/50">
                     <div class="mb-6">
-                        <h3 class="text-slate-900 text-lg font-bold mb-2">Convalescence</h3>
-                        <p class="text-slate-500 text-xs leading-relaxed">Récupération post-opératoire intensive.</p>
+                        <div
+                            class="size-12 rounded-2xl bg-slate-50 text-slate-400 flex items-center justify-center mb-6 group-hover:bg-brand-orange group-hover:text-white transition-all duration-300">
+                            <span class="material-symbols-outlined">workspace_premium</span>
+                        </div>
+                        <h3 class="text-neutral-dark text-xl font-bold mb-2">Formule Prestige</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">Accompagnement VIP et surveillance intensive.
+                        </p>
                     </div>
                     <div class="mb-8 pb-6 border-b border-gray-100">
                         <p class="flex items-baseline gap-1 text-neutral-dark">
@@ -319,30 +341,31 @@
                             <span class="text-xs font-medium text-gray-400">/ forfait</span>
                         </p>
                     </div>
-                    <ul class="flex flex-col gap-4 mb-8 flex-grow">
+                    <ul class="flex flex-col gap-4 mb-10 flex-grow">
                         <li class="flex gap-3 items-start">
-                            <span class="material-symbols-outlined text-primary text-lg mt-0.5">check</span>
-                            <span class="text-gray-600 text-sm">Passage quotidien infirmier</span>
+                            <span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
+                            <span class="text-gray-600 text-sm">Passage infirmier quotidien</span>
                         </li>
                         <li class="flex gap-3 items-start">
-                            <span class="material-symbols-outlined text-primary text-lg mt-0.5">check</span>
-                            <span class="text-gray-600 text-sm">Aide toilette &amp; repas</span>
+                            <span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
+                            <span class="text-gray-600 text-sm">Nursing complet (toilette, repas)</span>
                         </li>
                         <li class="flex gap-3 items-start">
-                            <span class="material-symbols-outlined text-primary text-lg mt-0.5">check</span>
-                            <span class="text-gray-600 text-sm">Suivi cicatrisation</span>
+                            <span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
+                            <span class="text-gray-600 text-sm">Assistance 24h/7j disponible</span>
                         </li>
                         <li class="flex gap-3 items-start">
-                            <span class="material-symbols-outlined text-primary text-lg mt-0.5">check</span>
-                            <span class="text-gray-600 text-sm">Lien médecin traitant</span>
+                            <span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
+                            <span class="text-gray-600 text-sm">Coordination avec les médecins</span>
                         </li>
                     </ul>
-                    <button
-                        class="w-full h-11 rounded-lg border border-gray-200 bg-white text-gray-700 text-sm font-semibold hover:bg-gray-50 hover:border-gray-300 transition-colors mt-auto">
-                        Nous consulter
-                    </button>
+                    <a href="https://wa.me/4915778144883" target="_blank"
+                        class="w-full h-12 flex items-center justify-center rounded-xl border border-gray-200 bg-white text-gray-700 text-sm font-bold hover:bg-gray-50 hover:border-gray-300 transition-all duration-300">
+                        Découvrir le Prestige
+                    </a>
                 </div>
             </div>
+
         </div>
     </div>
     <div class="bg-white py-24">
