@@ -21,27 +21,28 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#1E5AA8",
-                        "primary-dark": "#134689",
-                        "primary-light": "#E8F0FE",
-                        "brand-green": "#2FA37C",
-                        "brand-orange": "#F2994A",
-                        "neutral-dark": "#111827",
-                        "neutral-light": "#F9FAFB",
-                        "surface": "#F8FAFC",
-                        "text-main": "#1E293B",
-                        "text-body": "#475569",
+                        "primary": "#0066FF",
+                        "primary-dark": "#0052CC",
+                        "primary-light": "#E0EDFF",
+                        "brand-green": "#10B981",
+                        "brand-orange": "#F59E0B",
+                        "neutral-dark": "#0F172A",
+                        "neutral-light": "#F8FAFC",
+                        "surface": "#F9FAFB",
+                        "text-main": "#0F172A",
+                        "text-body": "#334155",
                     },
                     fontFamily: {
                         "sans": ["Inter", "sans-serif"],
                         "display": ["Plus Jakarta Sans", "sans-serif"],
                     },
                     borderRadius: {
-                        "4xl": "2rem",
+                        "4xl": "2.5rem",
                     },
                     boxShadow: {
-                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
-                        'card': '0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.1)',
+                        'soft': '0 20px 40px -10px rgba(0, 0, 0, 0.08)',
+                        'card': '0 4px 12px -2px rgba(0, 0, 0, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.02)',
+                        'glow': '0 0 20px rgba(0, 102, 255, 0.15)',
                     }
                 },
             },
@@ -102,7 +103,7 @@
                 </a>
             </div>
             <button id="mobile-menu-button"
-                class="md:hidden p-2 text-neutral-dark hover:bg-gray-50 rounded-lg transition-colors">
+                class="md:hidden p-2 text-neutral-dark hover:bg-gray-50 rounded-full transition-colors">
                 <span class="material-symbols-outlined text-[28px]">menu</span>
             </button>
         </div>
@@ -113,7 +114,7 @@
                     <a href="index.html">
                         <img src="assets/logo.jpg" alt="FredCare Logo" class="h-10 w-auto" />
                     </a>
-                    <button id="close-menu-button" class="p-2 text-neutral-dark hover:bg-gray-50 rounded-lg">
+                    <button id="close-menu-button" class="p-2 text-neutral-dark hover:bg-gray-50 rounded-full">
                         <span class="material-symbols-outlined text-[32px]">close</span>
                     </button>
                 </div>
@@ -209,7 +210,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a class="flex items-center justify-center gap-3 w-full bg-white border border-border-light hover:border-primary/30 text-text-main hover:text-primary p-5 rounded-xl font-medium shadow-card hover:shadow-lg transition-all group"
+                            <a class="flex items-center justify-center gap-3 w-full bg-white border border-border-light hover:border-primary/30 text-text-main hover:text-primary p-5 rounded-full font-medium shadow-card hover:shadow-lg transition-all group"
                                 href="https://wa.me/4915778144883" target="_blank">
                                 <span class="material-symbols-outlined text-green-600">chat</span>
                                 <span>Discuter directement sur WhatsApp</span>
@@ -230,7 +231,7 @@
                                 </a>
                             </div>
                             <div
-                                class="relative h-48 w-full rounded-2xl overflow-hidden bg-gray-50 ring-1 ring-gray-100">
+                                class="relative h-48 w-full rounded-3xl overflow-hidden bg-gray-50 ring-1 ring-gray-100">
                                 <img alt="Carte localisation Douala"
                                     class="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-700"
                                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXE0l_dy2_ORtrZMQD-tjypseJ6PnszuY6pRnToG-3zuq6ZqtZBThLmoqSPaOYkk_0tT4wmzezFK3uJdzMlNfVzALKt3oK2rrA6mJQpDBGGbD-H_wZyzBkri4RpzHqqQel5FFIyKS6d697OZ9-h_5sQY_BN_C2g2rzGDvMCGnjX9NZQbkKDiKd2XrRHQNFUPgUZBkkN6g1srIMBsCPsDLa-lJqeHlMe0SmHfhzhXLBDUKG39tahHByVJaw5XJsxRxgUe1VSdHbw5k" />
@@ -257,14 +258,14 @@
                                         <label class="text-xs font-semibold text-text-sub uppercase tracking-wider pl-1"
                                             for="name">Nom complet</label>
                                         <input
-                                            class="w-full px-5 py-4 rounded-xl bg-gray-50 border-0 focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all outline-none placeholder-gray-400 text-text-main font-medium"
+                                            class="w-full px-5 py-4 rounded-2xl bg-gray-50 border-0 focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all outline-none placeholder-gray-400 text-text-main font-medium"
                                             id="name" placeholder="Votre nom" type="text" />
                                     </div>
                                     <div class="flex flex-col gap-2">
                                         <label class="text-xs font-semibold text-text-sub uppercase tracking-wider pl-1"
                                             for="phone">Téléphone</label>
                                         <input
-                                            class="w-full px-5 py-4 rounded-xl bg-gray-50 border-0 focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all outline-none placeholder-gray-400 text-text-main font-medium"
+                                            class="w-full px-5 py-4 rounded-2xl bg-gray-50 border-0 focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all outline-none placeholder-gray-400 text-text-main font-medium"
                                             id="phone" placeholder="+237 ..." type="tel" />
                                     </div>
                                 </div>
@@ -272,7 +273,7 @@
                                     <label class="text-xs font-semibold text-text-sub uppercase tracking-wider pl-1"
                                         for="email">Email</label>
                                     <input
-                                        class="w-full px-5 py-4 rounded-xl bg-gray-50 border-0 focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all outline-none placeholder-gray-400 text-text-main font-medium"
+                                        class="w-full px-5 py-4 rounded-2xl bg-gray-50 border-0 focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all outline-none placeholder-gray-400 text-text-main font-medium"
                                         id="email" placeholder="votre-email@exemple.com" type="email" />
                                 </div>
                                 <div class="flex flex-col gap-2">
@@ -280,7 +281,7 @@
                                         for="service">Objet</label>
                                     <div class="relative">
                                         <select
-                                            class="w-full px-5 py-4 rounded-xl bg-gray-50 border-0 focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all outline-none text-text-main appearance-none cursor-pointer font-medium"
+                                            class="w-full px-5 py-4 rounded-2xl bg-gray-50 border-0 focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all outline-none text-text-main appearance-none cursor-pointer font-medium"
                                             id="service">
                                             <option>Soins infirmiers à domicile</option>
                                             <option>Kinésithérapie</option>
@@ -296,12 +297,12 @@
                                     <label class="text-xs font-semibold text-text-sub uppercase tracking-wider pl-1"
                                         for="message">Message</label>
                                     <textarea
-                                        class="w-full px-5 py-4 rounded-xl bg-gray-50 border-0 focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all outline-none placeholder-gray-400 text-text-main resize-none font-medium"
+                                        class="w-full px-5 py-4 rounded-2xl bg-gray-50 border-0 focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all outline-none placeholder-gray-400 text-text-main resize-none font-medium"
                                         id="message" placeholder="Votre message..." rows="5"></textarea>
                                 </div>
                                 <div class="pt-6">
                                     <button
-                                        class="w-full bg-primary hover:bg-primary-dark text-white font-medium text-lg py-5 rounded-xl shadow-lg shadow-primary/20 transform hover:-translate-y-0.5 active:scale-[0.99] transition-all flex items-center justify-center gap-2"
+                                        class="w-full bg-primary hover:bg-primary-dark text-white font-medium text-lg py-5 rounded-full shadow-lg shadow-primary/20 transform hover:-translate-y-0.5 active:scale-[0.99] transition-all flex items-center justify-center gap-2"
                                         type="button">
                                         Envoyer ma demande
                                     </button>

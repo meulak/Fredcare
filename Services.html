@@ -21,27 +21,28 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#1E5AA8",
-                        "primary-dark": "#134689",
-                        "primary-light": "#E8F0FE",
-                        "brand-green": "#2FA37C",
-                        "brand-orange": "#F2994A",
-                        "neutral-dark": "#111827",
-                        "neutral-light": "#F9FAFB",
-                        "surface": "#F8FAFC",
-                        "text-main": "#1E293B",
-                        "text-body": "#475569",
+                        "primary": "#0066FF",
+                        "primary-dark": "#0052CC",
+                        "primary-light": "#E0EDFF",
+                        "brand-green": "#10B981",
+                        "brand-orange": "#F59E0B",
+                        "neutral-dark": "#0F172A",
+                        "neutral-light": "#F8FAFC",
+                        "surface": "#F9FAFB",
+                        "text-main": "#0F172A",
+                        "text-body": "#334155",
                     },
                     fontFamily: {
                         "sans": ["Inter", "sans-serif"],
                         "display": ["Plus Jakarta Sans", "sans-serif"],
                     },
                     borderRadius: {
-                        "4xl": "2rem",
+                        "4xl": "2.5rem",
                     },
                     boxShadow: {
-                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
-                        'card': '0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.1)',
+                        'soft': '0 20px 40px -10px rgba(0, 0, 0, 0.08)',
+                        'card': '0 4px 12px -2px rgba(0, 0, 0, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.02)',
+                        'glow': '0 0 20px rgba(0, 102, 255, 0.15)',
                     }
                 },
             },
@@ -117,7 +118,7 @@
                     <a href="index.html">
                         <img src="assets/logo.jpg" alt="FredCare Logo" class="h-10 w-auto" />
                     </a>
-                    <button id="close-menu-button" class="p-2 text-neutral-dark hover:bg-gray-50 rounded-lg">
+                    <button id="close-menu-button" class="p-2 text-neutral-dark hover:bg-gray-50 rounded-full">
                         <span class="material-symbols-outlined text-[32px]">close</span>
                     </button>
                 </div>
@@ -197,7 +198,7 @@
                         infirmiers diplômés d'État, garantissant sécurité et hygiène.</p>
                 </div>
                 <div
-                    class="group flex flex-col items-center text-center p-8 rounded-2xl bg-white border border-slate-100 hover:border-slate-200 hover:shadow-card transition-all duration-300">
+                    class="group flex flex-col items-center text-center p-8 rounded-3xl bg-white border border-slate-100 hover:border-slate-200 hover:shadow-card transition-all duration-300">
                     <div
                         class="size-16 rounded-full bg-primary-light text-primary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <span class="material-symbols-outlined text-3xl">volunteer_activism</span>
@@ -207,7 +208,7 @@
                         gestes essentiels, brisant l'isolement avec dignité.</p>
                 </div>
                 <div
-                    class="group flex flex-col items-center text-center p-8 rounded-2xl bg-white border border-slate-100 hover:border-slate-200 hover:shadow-card transition-all duration-300">
+                    class="group flex flex-col items-center text-center p-8 rounded-3xl bg-white border border-slate-100 hover:border-slate-200 hover:shadow-card transition-all duration-300">
                     <div
                         class="size-16 rounded-full bg-primary-light text-primary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <span class="material-symbols-outlined text-3xl">connect_without_contact</span>

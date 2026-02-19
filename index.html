@@ -19,27 +19,28 @@
       theme: {
         extend: {
           colors: {
-            "primary": "#1E5AA8",
-            "primary-dark": "#134689",
-            "primary-light": "#E8F0FE",
-            "brand-green": "#2FA37C",
-            "brand-orange": "#F2994A",
-            "neutral-dark": "#111827",
-            "neutral-light": "#F9FAFB",
-            "surface": "#F8FAFC",
-            "text-main": "#1E293B",
-            "text-body": "#475569",
+            "primary": "#0066FF",
+            "primary-dark": "#0052CC",
+            "primary-light": "#E0EDFF",
+            "brand-green": "#10B981",
+            "brand-orange": "#F59E0B",
+            "neutral-dark": "#0F172A",
+            "neutral-light": "#F8FAFC",
+            "surface": "#F9FAFB",
+            "text-main": "#0F172A",
+            "text-body": "#334155",
           },
           fontFamily: {
             "sans": ["Inter", "sans-serif"],
             "display": ["Plus Jakarta Sans", "sans-serif"],
           },
           borderRadius: {
-            "4xl": "2rem",
+            "4xl": "2.5rem",
           },
           boxShadow: {
-            'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
-            'card': '0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.1)',
+            'soft': '0 20px 40px -10px rgba(0, 0, 0, 0.08)',
+            'card': '0 4px 12px -2px rgba(0, 0, 0, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.02)',
+            'glow': '0 0 20px rgba(0, 102, 255, 0.15)',
           }
         },
       },
@@ -104,7 +105,7 @@
           <a href="index.html">
             <img src="assets/logo.jpg" alt="FredCare Logo" class="h-10 w-auto" />
           </a>
-          <button id="close-menu-button" class="p-2 text-neutral-dark hover:bg-gray-50 rounded-lg">
+          <button id="close-menu-button" class="p-2 text-neutral-dark hover:bg-gray-50 rounded-full">
             <span class="material-symbols-outlined text-[32px]">close</span>
           </button>
         </div>
@@ -194,7 +195,7 @@
               class="absolute top-[28%] right-[5%] w-[20%] h-[20%] backdrop-blur-[30px] bg-white/10 rounded-full shadow-xl pointer-events-none"
               title="Confidentialité préservée"></div>
             <div
-              class="absolute bottom-8 left-8 bg-white/95 backdrop-blur-sm p-4 pr-6 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-white/50 flex items-center gap-4 animate-fade-in-up">
+              class="absolute bottom-8 left-8 bg-white/95 backdrop-blur-sm p-4 pr-6 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-white/50 flex items-center gap-4 animate-fade-in-up">
               <div
                 class="w-12 h-12 rounded-full bg-brand-green/10 flex items-center justify-center text-brand-green shrink-0">
                 <span class="material-symbols-outlined">favorite</span>
