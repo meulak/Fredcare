@@ -220,12 +220,13 @@
         </div>
     </div>
     <div class="bg-surface py-32" id="tarifs">
-        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 flex flex-col">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
             <div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-8">
-                <div class="max-w-2xl">
-                    <h2 class="text-slate-900 text-3xl font-semibold tracking-tight mb-4">Formules de Soins</h2>
-                    <p class="text-slate-500 text-lg font-light">Des plans structurés pour répondre précisément aux
-                        besoins cliniques.</p>
+                <div class="max-w-3xl">
+                    <h2 class="text-slate-900 text-3xl font-semibold tracking-tight mb-4">La Santé pour Tous</h2>
+                    <p class="text-slate-500 text-lg font-light">La santé est un droit, pas un luxe. Chez FredCare,
+                        nous adaptons nos tarifs à votre réalité pour qu'aucun de vos proches ne soit laissé pour
+                        compte.</p>
                 </div>
                 <div class="flex items-center bg-white p-1 rounded-full shadow-sm border border-slate-200">
                     <button
@@ -234,234 +235,159 @@
                         class="px-5 py-2 text-slate-400 hover:text-primary text-xs font-bold tracking-wide transition-colors uppercase">Téléconsultation</button>
                 </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
-                <!-- Formule Essentiel -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+                <!-- Tarifs Flexibles -->
                 <div
-                    class="flex flex-col bg-white rounded-3xl p-8 border border-gray-100 hover:border-gray-200 transition-all duration-300 relative group h-full hover:shadow-lg hover:shadow-gray-200/50">
+                    class="flex flex-col bg-white rounded-3xl p-8 border border-gray-100 hover:border-primary/20 transition-all duration-300 relative group h-full hover:shadow-xl hover:shadow-primary/5">
                     <div class="mb-6">
                         <div
-                            class="size-12 rounded-2xl bg-slate-50 text-slate-400 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                            <span class="material-symbols-outlined">medical_information</span>
+                            class="size-14 rounded-2xl bg-primary/5 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                            <span class="material-symbols-outlined text-3xl">payments</span>
                         </div>
-                        <h3 class="text-neutral-dark text-xl font-bold mb-2">Formule Essentiel</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed">Pour un besoin ponctuel ou une évaluation
-                            initiale.</p>
-                    </div>
-                    <div class="mb-8 pb-6 border-b border-gray-100">
-                        <p class="flex items-baseline gap-1 text-neutral-dark">
-                            <span class="text-3xl font-bold tracking-tight">Sur devis</span>
-                            <span class="text-xs font-medium text-gray-400">/ intervention</span>
-                        </p>
+                        <h3 class="text-neutral-dark text-xl font-bold mb-3">Tarifs Flexibles</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">Le coût de nos soins n'est jamais un
+                            obstacle insurmontable. Nous évaluons chaque situation pour proposer le prix le plus
+                            juste.</p>
                     </div>
                     <ul class="flex flex-col gap-4 mb-10 flex-grow">
                         <li class="flex gap-3 items-start">
                             <span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
-                            <span class="text-gray-600 text-sm">Visite d'évaluation à domicile</span>
+                            <span class="text-gray-600 text-sm font-medium">Devis personnalisé après
+                                évaluation</span>
                         </li>
                         <li class="flex gap-3 items-start">
                             <span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
-                            <span class="text-gray-600 text-sm">Soins infirmiers sur prescription</span>
+                            <span class="text-gray-600 text-sm font-medium">Adaptation selon la pathologie et le
+                                besoin</span>
                         </li>
                         <li class="flex gap-3 items-start">
                             <span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
-                            <span class="text-gray-600 text-sm">Conseils en hygiène et nutrition</span>
-                        </li>
-                        <li class="flex gap-3 items-start text-gray-400">
-                            <span class="material-symbols-outlined text-lg mt-0.5">remove_circle_outline</span>
-                            <span class="text-sm">Rapport numérique détaillé</span>
+                            <span class="text-gray-600 text-sm font-medium">Transparence totale, sans frais
+                                cachés</span>
                         </li>
                     </ul>
                     <a href="https://wa.me/4915778144883" target="_blank"
-                        class="w-full h-12 flex items-center justify-center rounded-xl border border-primary text-primary text-sm font-bold hover:bg-primary hover:text-white transition-all duration-300">
-                        Choisir l'Essentiel
+                        class="w-full h-12 flex items-center justify-center rounded-xl bg-primary/5 text-primary text-sm font-bold hover:bg-primary hover:text-white transition-all duration-300">
+                        Demander mon devis
                     </a>
                 </div>
 
-                <!-- Formule Sérénité -->
+                <!-- Soutien Solidaire -->
                 <div
-                    class="flex flex-col bg-white rounded-3xl p-8 border-2 border-primary shadow-xl shadow-primary/10 relative z-10 h-full scale-105 md:scale-110">
-                    <div class="absolute -top-4 left-1/2 -translate-x-1/2">
-                        <span
-                            class="bg-primary text-white text-[10px] font-bold px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Recommandé</span>
-                    </div>
+                    class="flex flex-col bg-white rounded-3xl p-8 border border-orange-100 hover:border-brand-orange/20 transition-all duration-300 relative group h-full hover:shadow-xl hover:shadow-brand-orange/5">
                     <div class="mb-6">
-                        <div class="size-12 rounded-2xl bg-primary text-white flex items-center justify-center mb-6">
-                            <span class="material-symbols-outlined">verified_user</span>
+                        <div
+                            class="size-14 rounded-2xl bg-brand-orange/5 text-brand-orange flex items-center justify-center mb-6 group-hover:bg-brand-orange group-hover:text-white transition-all duration-300">
+                            <span class="material-symbols-outlined text-3xl">volunteer_activism</span>
                         </div>
-                        <h3 class="text-primary text-xl font-bold mb-2">Formule Sérénité</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed">Suivi régulier pour une tranquillité d'esprit
-                            totale.</p>
-                    </div>
-                    <div class="mb-8 pb-6 border-b border-dashed border-gray-200">
-                        <p class="flex items-baseline gap-1 text-neutral-dark">
-                            <span class="text-4xl font-bold tracking-tight">Sur devis</span>
-                            <span class="text-xs font-medium text-gray-400">/ mois</span>
-                        </p>
+                        <h3 class="text-neutral-dark text-xl font-bold mb-3">Soutien Solidaire</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">Nous collaborons avec des ONG et des
+                            partenaires locaux pour soutenir les familles en situation de précarité.</p>
                     </div>
                     <ul class="flex flex-col gap-4 mb-10 flex-grow">
                         <li class="flex gap-3 items-start">
-                            <span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
-                            <span class="text-gray-700 text-sm font-medium">3 passages infirmiers / semaine</span>
+                            <span class="material-symbols-outlined text-brand-orange text-lg mt-0.5">favorite</span>
+                            <span class="text-gray-600 text-sm font-medium">Fonds de secours FredCare dédié</span>
                         </li>
                         <li class="flex gap-3 items-start">
-                            <span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
-                            <span class="text-gray-700 text-sm font-medium">Contrôle des constantes vitales</span>
+                            <span class="material-symbols-outlined text-brand-orange text-lg mt-0.5">favorite</span>
+                            <span class="text-gray-600 text-sm font-medium">Prise en charge partielle via nos
+                                partenaires</span>
                         </li>
                         <li class="flex gap-3 items-start">
-                            <span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
-                            <span class="text-gray-700 text-sm font-medium">Gestion du pilulier hebdomadaire</span>
-                        </li>
-                        <li class="flex gap-3 items-start bg-primary/5 p-3 rounded-2xl -mx-1">
-                            <span
-                                class="material-symbols-outlined text-primary text-lg mt-0.5">notifications_active</span>
-                            <span class="text-primary text-sm font-bold">Rapports WhatsApp quotidiens</span>
+                            <span class="material-symbols-outlined text-brand-orange text-lg mt-0.5">favorite</span>
+                            <span class="text-gray-600 text-sm font-medium">Accompagnement social et humain
+                                inclus</span>
                         </li>
                     </ul>
                     <a href="https://wa.me/4915778144883" target="_blank"
-                        class="w-full h-12 flex items-center justify-center rounded-xl bg-primary text-white text-sm font-bold hover:bg-primary-dark transition-all shadow-lg shadow-primary/20">
-                        Opter pour la Sérénité
+                        class="w-full h-12 flex items-center justify-center rounded-xl bg-brand-orange/5 text-brand-orange text-sm font-bold hover:bg-brand-orange hover:text-white transition-all duration-300">
+                        Se renseigner
                     </a>
                 </div>
 
-                <!-- Formule Prestige -->
+                <!-- Paiement Adapté -->
                 <div
-                    class="flex flex-col bg-white rounded-3xl p-8 border border-gray-100 hover:border-gray-200 transition-all duration-300 relative group h-full hover:shadow-lg hover:shadow-gray-200/50">
+                    class="flex flex-col bg-white rounded-3xl p-8 border border-green-100 hover:border-brand-green/20 transition-all duration-300 relative group h-full hover:shadow-xl hover:shadow-brand-green/5">
                     <div class="mb-6">
                         <div
-                            class="size-12 rounded-2xl bg-slate-50 text-slate-400 flex items-center justify-center mb-6 group-hover:bg-brand-orange group-hover:text-white transition-all duration-300">
-                            <span class="material-symbols-outlined">workspace_premium</span>
+                            class="size-14 rounded-2xl bg-brand-green/5 text-brand-green flex items-center justify-center mb-6 group-hover:bg-brand-green group-hover:text-white transition-all duration-300">
+                            <span class="material-symbols-outlined text-3xl">calendar_month</span>
                         </div>
-                        <h3 class="text-neutral-dark text-xl font-bold mb-2">Formule Prestige</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed">Accompagnement VIP et surveillance intensive.
-                        </p>
+                        <h3 class="text-neutral-dark text-xl font-bold mb-3">Paiement Adapté</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">Des options de règlement modulables selon
+                            vos capacités financières pour une sérénité totale.</p>
                     </div>
-                    <div class="mb-8 pb-6 border-b border-gray-100">
-                        <p class="flex items-baseline gap-1 text-neutral-dark">
-                            <span class="text-3xl font-bold tracking-tight">Sur devis</span>
-                            <span class="text-xs font-medium text-gray-400">/ forfait</span>
-                        </p>
+                    <ul class="flex flex-col gap-4 mb-10 flex-grow">
+                        <li class="flex gap-3 items-start">
+                            <span class="material-symbols-outlined text-brand-green text-lg mt-0.5">check_circle</span>
+                            <span class="text-gray-600 text-sm font-medium">Paiement en plusieurs fois sans
+                                frais</span>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <span class="material-symbols-outlined text-brand-green text-lg mt-0.5">check_circle</span>
+                            <span class="text-gray-600 text-sm font-medium">Échelonnement mensuel flexible</span>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <span class="material-symbols-outlined text-brand-green text-lg mt-0.5">check_circle</span>
+                            <span class="text-gray-600 text-sm font-medium">Acceptation Mobile Money &
+                                Virement</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/4915778144883" target="_blank"
+                        class="w-full h-12 flex items-center justify-center rounded-xl bg-brand-green/5 text-brand-green text-sm font-bold hover:bg-brand-green hover:text-white transition-all duration-300">
+                        Voir les options
+                    </a>
+                </div>
+
+                <!-- Optimisation des Coûts -->
+                <div
+                    class="flex flex-col bg-white rounded-3xl p-8 border border-slate-100 hover:border-primary/20 transition-all duration-300 relative group h-full hover:shadow-xl hover:shadow-primary/5">
+                    <div class="mb-6">
+                        <div
+                            class="size-14 rounded-2xl bg-slate-100 text-slate-600 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                            <span class="material-symbols-outlined text-3xl">balance</span>
+                        </div>
+                        <h3 class="text-neutral-dark text-xl font-bold mb-3">Optimisation des Coûts</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">Choisissez l'équilibre idéal entre
+                            assistance médicale et aide à domicile pour votre budget.</p>
                     </div>
                     <ul class="flex flex-col gap-4 mb-10 flex-grow">
                         <li class="flex gap-3 items-start">
                             <span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
-                            <span class="text-gray-600 text-sm">Passage infirmier quotidien</span>
+                            <span class="text-gray-600 text-sm font-medium">Mix Infirmière / Auxiliaire de
+                                vie</span>
                         </li>
                         <li class="flex gap-3 items-start">
                             <span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
-                            <span class="text-gray-600 text-sm">Nursing complet (toilette, repas)</span>
+                            <span class="text-gray-600 text-sm font-medium">Réduction des frais techniques non
+                                essentiels</span>
                         </li>
                         <li class="flex gap-3 items-start">
                             <span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
-                            <span class="text-gray-600 text-sm">Assistance 24h/7j disponible</span>
-                        </li>
-                        <li class="flex gap-3 items-start">
-                            <span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
-                            <span class="text-gray-600 text-sm">Coordination avec les médecins</span>
+                            <span class="text-gray-600 text-sm font-medium">Matériel de base inclus dans le
+                                forfait</span>
                         </li>
                     </ul>
                     <a href="https://wa.me/4915778144883" target="_blank"
-                        class="w-full h-12 flex items-center justify-center rounded-xl border border-gray-200 bg-white text-gray-700 text-sm font-bold hover:bg-gray-50 hover:border-gray-300 transition-all duration-300">
-                        Découvrir le Prestige
+                        class="w-full h-12 flex items-center justify-center rounded-xl border border-primary/20 text-primary text-sm font-bold hover:bg-primary hover:text-white transition-all duration-300">
+                        Optimiser mon budget
                     </a>
                 </div>
             </div>
 
-        </div>
-    </div>
-    <div class="bg-white py-24">
-        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
-            <div class="mb-16 flex flex-col md:flex-row justify-between items-end gap-6 border-b border-slate-100 pb-8">
-                <div class="max-w-2xl">
-                    <h3 class="text-slate-900 text-2xl font-semibold tracking-tight mb-2">Actes &amp; Soins à la Carte
-                    </h3>
-                    <p class="text-slate-500 font-light">Interventions sur prescription médicale, avec matériel adapté.
-                    </p>
+            <!-- Mission Statement -->
+            <div class="mt-20 max-w-4xl mx-auto text-center">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/5 text-primary text-xs font-bold uppercase tracking-wider mb-6">
+                    <span class="material-symbols-outlined text-sm">auto_awesome</span>
+                    Notre Mission de Cœur
                 </div>
-                <a class="text-primary font-medium text-sm hover:underline flex items-center gap-1 mb-1" href="#">
-                    Voir la liste complète <span class="material-symbols-outlined text-lg">arrow_forward</span>
-                </a>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-12">
-                <div class="flex items-start gap-4">
-                    <div
-                        class="size-10 rounded-full bg-slate-50 text-primary flex-shrink-0 flex items-center justify-center">
-                        <span class="material-symbols-outlined text-xl">vaccines</span>
-                    </div>
-                    <div>
-                        <h4 class="text-sm font-bold text-slate-900 mb-1">Injections</h4>
-                        <p class="text-xs text-slate-500">IV, IM, SC &amp; Perfusions</p>
-                    </div>
-                </div>
-                <div class="flex items-start gap-4">
-                    <div
-                        class="size-10 rounded-full bg-slate-50 text-primary flex-shrink-0 flex items-center justify-center">
-                        <span class="material-symbols-outlined text-xl">healing</span>
-                    </div>
-                    <div>
-                        <h4 class="text-sm font-bold text-slate-900 mb-1">Pansements</h4>
-                        <p class="text-xs text-slate-500">Simples &amp; complexes</p>
-                    </div>
-                </div>
-                <div class="flex items-start gap-4">
-                    <div
-                        class="size-10 rounded-full bg-slate-50 text-primary flex-shrink-0 flex items-center justify-center">
-                        <span class="material-symbols-outlined text-xl">monitor_heart</span>
-                    </div>
-                    <div>
-                        <h4 class="text-sm font-bold text-slate-900 mb-1">Surveillance</h4>
-                        <p class="text-xs text-slate-500">Constantes vitales</p>
-                    </div>
-                </div>
-                <div class="flex items-start gap-4">
-                    <div
-                        class="size-10 rounded-full bg-slate-50 text-primary flex-shrink-0 flex items-center justify-center">
-                        <span class="material-symbols-outlined text-xl">water_drop</span>
-                    </div>
-                    <div>
-                        <h4 class="text-sm font-bold text-slate-900 mb-1">Prélèvements</h4>
-                        <p class="text-xs text-slate-500">Sanguins &amp; analyses</p>
-                    </div>
-                </div>
-                <div class="flex items-start gap-4">
-                    <div
-                        class="size-10 rounded-full bg-slate-50 text-primary flex-shrink-0 flex items-center justify-center">
-                        <span class="material-symbols-outlined text-xl">self_improvement</span>
-                    </div>
-                    <div>
-                        <h4 class="text-sm font-bold text-slate-900 mb-1">Kinésithérapie</h4>
-                        <p class="text-xs text-slate-500">Rééducation motrice</p>
-                    </div>
-                </div>
-                <div class="flex items-start gap-4">
-                    <div
-                        class="size-10 rounded-full bg-slate-50 text-primary flex-shrink-0 flex items-center justify-center">
-                        <span class="material-symbols-outlined text-xl">clean_hands</span>
-                    </div>
-                    <div>
-                        <h4 class="text-sm font-bold text-slate-900 mb-1">Hygiène</h4>
-                        <p class="text-xs text-slate-500">Toilette &amp; confort</p>
-                    </div>
-                </div>
-                <div class="flex items-start gap-4">
-                    <div
-                        class="size-10 rounded-full bg-slate-50 text-primary flex-shrink-0 flex items-center justify-center">
-                        <span class="material-symbols-outlined text-xl">medication</span>
-                    </div>
-                    <div>
-                        <h4 class="text-sm font-bold text-slate-900 mb-1">Médicaments</h4>
-                        <p class="text-xs text-slate-500">Préparation pilulier</p>
-                    </div>
-                </div>
-                <div class="flex items-start gap-4">
-                    <div
-                        class="size-10 rounded-full bg-slate-50 text-primary flex-shrink-0 flex items-center justify-center">
-                        <span class="material-symbols-outlined text-xl">emergency</span>
-                    </div>
-                    <div>
-                        <h4 class="text-sm font-bold text-slate-900 mb-1">Gardes</h4>
-                        <p class="text-xs text-slate-500">Nuit &amp; Weekend</p>
-                    </div>
-                </div>
+                <p class="text-2xl md:text-3xl font-light text-slate-800 leading-relaxed italic">
+                    "Chez FredCare Cameroun, notre mission est simple : apporter l'hôpital à la maison avec <span
+                        class="text-primary font-medium">dignité, humanité et accessibilité</span>. Car chaque vie
+                    compte, quelle que soit sa situation financière."
+                </p>
             </div>
         </div>
     </div>
@@ -474,13 +400,15 @@
                             style='background-image: url("https://images.unsplash.com/photo-1531384441138-2736e62e0919?auto=format&fit=crop&q=80&w=150&h=150");'>
                         </div>
                     </div>
-                    <div class="absolute -top-6 -left-6 w-full h-full border border-slate-100 rounded-2xl -z-10"></div>
+                    <div class="absolute -top-6 -left-6 w-full h-full border border-slate-100 rounded-2xl -z-10">
+                    </div>
                 </div>
                 <div class="lg:w-7/12 flex flex-col gap-8 order-1 lg:order-2">
                     <span
                         class="text-primary font-bold text-[10px] tracking-[0.2em] uppercase bg-slate-50 px-3 py-1.5 rounded-sm w-fit border border-slate-100">Témoignage</span>
                     <blockquote class="text-3xl font-medium text-slate-900 leading-tight">
-                        "Depuis Paris, je suis enfin rassuré. Le rapport WhatsApp quotidien avec photos change tout pour
+                        "Depuis Paris, je suis enfin rassuré. Le rapport WhatsApp quotidien avec photos change tout
+                        pour
                         nous."
                     </blockquote>
                     <div class="flex items-center gap-4 mt-2">
@@ -529,7 +457,8 @@
                         </div>
                     </div>
                     <p class="text-gray-400 text-sm leading-7 font-light max-w-sm">
-                        Le partenaire de confiance pour les soins à domicile au Cameroun. Nous apportons l'hôpital à la
+                        Le partenaire de confiance pour les soins à domicile au Cameroun. Nous apportons l'hôpital à
+                        la
                         maison avec
                         humanité, expertise et technologie.
                     </p>
@@ -591,7 +520,8 @@
                             <div class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center shrink-0">
                                 <span class="material-symbols-outlined text-brand-orange text-[18px]">location_on</span>
                             </div>
-                            <span class="text-sm leading-relaxed pt-1">Edea Cameroun,<br />à côté hotel de ville</span>
+                            <span class="text-sm leading-relaxed pt-1">Edea Cameroun,<br />à côté hotel de
+                                ville</span>
                         </li>
                         <li class="flex items-center gap-4">
                             <div class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center shrink-0">
@@ -613,7 +543,8 @@
             <div class="border-t border-gray-800/50 pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
                 <p class="text-xs text-gray-500 font-light">© 2024 FredCare Cameroun. Tous droits réservés.</p>
                 <div class="flex gap-8">
-                    <a class="text-xs text-gray-500 hover:text-white transition-colors" href="#">Mentions Légales</a>
+                    <a class="text-xs text-gray-500 hover:text-white transition-colors" href="#">Mentions
+                        Légales</a>
                     <a class="text-xs text-gray-500 hover:text-white transition-colors" href="#">Confidentialité</a>
                     <a class="text-xs text-gray-500 hover:text-white transition-colors" href="#">Plan du site</a>
                 </div>
